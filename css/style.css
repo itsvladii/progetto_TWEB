@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #4338ca;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#nav-links,
+#search-bar {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+body {
+    background-color: #f3f4f6;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+#log-in {
+    background-color: #84cc16;
+    color: #1f2937;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+}
