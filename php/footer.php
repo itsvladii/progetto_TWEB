@@ -11,18 +11,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&family=Raleway:wght@600&display=swap" rel="stylesheet">
     </head>
     <body>
-        <?php
-            include 'php/navbar.php';
-        ?>
-        
-        <main>
-            <div class="main-section">
-
+        <footer>
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </ul>
             </div>
-        </main>
-        
-        <?php
-            include 'php/footer.php';
-        ?>
+        </footer>
     </body>
 </html>
