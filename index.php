@@ -11,21 +11,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&family=Raleway:wght@600&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav>
-                <div id="logo">
-                    <h1><span class="ticket">Ticket</span><span class="two">Two</span></h1>
-                </div>
-
-                <div id="auth-buttons">
-                    <ul id="nav-links">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <button id="log-in">Log In</button>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <?php
+            include 'php/navbar.php';
+        ?>
+        
         <main>
             <div class="main-section">
 
