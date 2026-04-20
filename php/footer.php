@@ -86,7 +86,7 @@
   <hr>
   <div class="colf">
   <div class="text-center">
-    <h1>© 2026 Copyright: ticketTwo</h1>
+    <h1>© 2026 Copyright: TicketTwo</h1>
   </div>
   </div>
 </div>

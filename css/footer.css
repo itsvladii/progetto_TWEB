@@ -66,6 +66,12 @@ footer
   -moz-transition: .1s;
 }
 
+.footer hr{
+  border: 0;
+  height: 1px;
+  background-color: #f7a730;
+}
+
 .clearfix {
   clear: both;
 }
