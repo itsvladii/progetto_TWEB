@@ -13,7 +13,7 @@
 <footer class="footer">
 <div class="contain">
   <div class="colf">
-    <h1>area umanistica</h1>
+    <h1>TicketTwo</h1>
     <ul>
       <li onClick="location.href='mat_uma.php#n1';">Animal Farm</li>
       <li onClick="location.href='mat_uma.php#n2';">L'invasione di Roma</li>
@@ -86,7 +86,7 @@
   <hr>
   <div class="colf">
   <div class="text-center">
-    <h1>© 2023 Copyright: Mandolini Mirco</h1>
+    <h1>© 2026 Copyright: ticketTwo</h1>
   </div>
   </div>
 </div>
