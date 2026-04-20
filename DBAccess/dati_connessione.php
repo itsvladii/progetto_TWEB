@@ -1,8 +1,8 @@
 <?php
-    $HOSTDB="localhost";
-	$USERDB="root";
-	$PASSDB="root";
-	$NAMEDB="db-5a";
+    $HOSTDB="https://tweban.dii.univpm.it/phpMyAdmin/";
+	$USERDB="grp_02";
+	$PASSDB="m0gwAwp8";
+	$NAMEDB="grp_02_db";
 
 	function db_connection(){
 		global $HOSTDB,$USERDB,$PASSDB,$NAMEDB;
