@@ -7,10 +7,10 @@
         </ul>
     </div>
 </footer> -->
-    
+
 <link rel="stylesheet" href="css/footer.css">
 <!-- <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top"> -->
-<footer class="footer">    
+<footer class="footer">
 <div class="contain">
   <div class="colf">
     <h1>area umanistica</h1>
@@ -53,7 +53,7 @@
       <li onClick="location.href='profilo.php#libero';">Tempo libero</li>
     </ul>
   </div>
-  
+
 <div class="clearfix"></div>
 
 <div class="contain">
@@ -92,8 +92,3 @@
 </div>
 <div class="clearfix"></div>
 </footer>
-
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script> -->
