@@ -5,39 +5,7 @@
     box-sizing: border-box;
 }
 
-/* SEZIONE STILI DI NAVBAR */
-/* stili per la barra di navigazione */
-nav {
-    background-color: #0a2e2e;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
 
-/* stili per il "logo" */
-#logo {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-/* stili per le parole "ticket" e "two" all'interno del logo */
-#logo .ticket {
-    color: #ffffff;
-}
-
-#logo .two {
-    color: #5bbfb0;
-}
-
-/* stili per le ancore nella navbar*/
-#nav-links {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
 
 /* SEZIONE STILI BODY */
 /* stili per il corpo della pagina */
@@ -62,7 +30,7 @@ a:hover {
 
 /* stili per il pulsante di login */
 #log-in {
-    background-color: #5bbfb0;
+    background-color: #f7a730;
     color: #ffffff;
     font-family: "Raleway", sans-serif;
     font-weight: 600;
@@ -74,7 +42,7 @@ a:hover {
 }
 
 /*STILI PER IL FOOTER*/
-footer {
+/* footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -87,4 +55,4 @@ footer {
     text-align: center;
     padding: 15px 0;
     font-family: "Mulish", sans-serif;
-}
+} */

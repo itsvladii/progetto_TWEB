@@ -1,12 +1,14 @@
 # Progetto TWEB (TicketTwo)
 
 ## Palette colori
-- Deep teal, per navbar e footer (#0A2E2E)
-- Surface (#133D3D)
-- Teal mid (#1A7A6E)
-- Aqua, per pulsanti (#5BBFB0)
-- Cream, per sfondo della pagina (#FAF0EB)
+- Navbar e footer (#0b1a2e)
+- sfondo (#f4f3ef)
+- bottoni, ... (#f7a730)
+- elementi secondari (#ffffff)
+- altro (#1c3a6b)
 
 ## Font
 - Raleway, per i titoli
 - Mulish, per il resto
+
+

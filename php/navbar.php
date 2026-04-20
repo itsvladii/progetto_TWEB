@@ -1,8 +1,9 @@
-
+<link rel="stylesheet" href="css/navbar.css">
 <header>
     <nav>
+
         <div id="logo">
-            <h1><span class="ticket">Ticket</span><span class="two">Two</span></h1>
+            <a href='#'><h1><span class="ticket">Ticket</span><span class="two">Two</span></h1></a>
         </div>
 
         <div id="auth-buttons">

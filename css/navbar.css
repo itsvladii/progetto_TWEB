@@ -1,0 +1,33 @@
+/* SEZIONE STILI DI NAVBAR */
+/* stili per la barra di navigazione */
+nav {
+    background-color: #0b1a2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* stili per il "logo" */
+#logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* stili per le parole "ticket" e "two" all'interno del logo */
+#logo .ticket {
+    color: #ffffff;
+}
+
+#logo .two {
+    color: #f7a730;
+}
+
+/* stili per le ancore nella navbar*/
+#nav-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
