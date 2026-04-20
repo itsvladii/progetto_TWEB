@@ -3,7 +3,7 @@
 footer 
 {
     /* background-color: #3a4f50; */
-    background-color: #0b1a2e;
+    background-color: #1c3a6b;
     margin-top: auto;
 }
 
@@ -33,7 +33,7 @@ footer
   font-size: 12px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
-  color: black;
+  color: white;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.250em;
@@ -44,7 +44,7 @@ footer
   padding: 0;
 }
 .footer .colf ul li {
-  color: black;
+  color: white;
   font-size: 14px;
   font-family: inherit;
   font-weight: bold;
@@ -60,7 +60,7 @@ footer
 }
 
 .footer .colf ul li:hover {
-  color: #ffffff;
+  color: #f7a730;
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
