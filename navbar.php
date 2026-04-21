@@ -7,8 +7,8 @@
             </div>
             <div id="auth-buttons">
                 <ul id="nav-links">
-                    <a href="#">EVENTI</a>
-                    <button id="log-in">Log In</button>
+                    <a href="index.php">EVENTI</a>
+                    <button id="log-in" onclick="window.location.href='login.php'">Log In</button>
                 </ul>
             </div>
         </div>
