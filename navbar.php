@@ -8,7 +8,7 @@
             <div id="auth-buttons">
                 <ul id="nav-links">
                     <a href="index.php">EVENTI</a>
-                    <button id="log-in" onclick="window.location.href='login.php'">Log In</button>
+                    <button id="log-in" onClick="location.href='login.php'">Log In</button>
                 </ul>
             </div>
         </div>

@@ -3,6 +3,27 @@
 <html lang="en">
     <head>
         <?php include "head.php"; ?>
+
+        <script>
+            // funzione per mostrare/nascondere la password al click sull'icona dell'occhio
+            // passwordFieldId è l'id del campo password da mostrare/nascondere
+            // l'icona dell'occhio è un elemento span con classe "icon" che contiene un elemento i con classe "fa-solid fa-eye" o "fa-solid fa-eye-slash"
+            // quando la password è nascosta (type="password") l'icona è "fa-eye" e quando la password è visibile (type="text") l'icona è "fa-eye-slash"
+            // al click sull'icona dell'occhio si chiama questa funzione che cambia il tipo del campo password e l'icona di conseguenza
+            function togglePasswordVisibility(passwordFieldId) {
+                const passwordField = document.getElementById(passwordFieldId);
+                const icon = passwordField.nextElementSibling.querySelector('i');
+                const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordField.setAttribute('type', type);
+                if (type === 'password') {
+                    icon.classList.remove('fa-eye-slash');
+                    icon.classList.add('fa-eye');
+                } else {
+                    icon.classList.remove('fa-eye');
+                    icon.classList.add('fa-eye-slash');
+                }
+            }
+        </script>
     </head>
     <body>
         <?php include "navbar.php"; ?>
@@ -12,8 +33,9 @@
                 <div class="row">
                     <div class="col-3"></div>
                     <div class="col-6 text-center">
-                        <h1>Login</h1>
-                        <form action="login.php" method="post">
+                        
+                        <form action="login.php" class="form" method="post">
+                            <h1>Login</h1>
                             <!-- username -->
                             <div class="mb-3">
                                 <label for="username" class="form-label">Username</label>
@@ -21,8 +43,14 @@
                             </div>
                             <!-- password -->
                             <div class="mb-3">
+                                <!-- imput password con occhio visibilità password -->
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password" name="password" placeholder="Inserisci la tua password" required>
+                                <div class="input_box">
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Inserisci la tua password" required>
+                                    <span class="icon" onclick="togglePasswordVisibility('password')">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </span>
+                                </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Login</button>
                             <!-- registrazione se non registrato -->
