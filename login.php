@@ -1,4 +1,3 @@
-<html/progetto_TWEB/index.html>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -31,28 +30,28 @@
         <main>
             <div class="fluid-container main-section section">
                 <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-6 text-center">
+                    <div class="col-sm-2 col-md-3"></div>
+                    <div class="col-sm-8 col-md-6">
                         
-                        <form action="login.php" class="form" method="post">
+                        <form action="controllo_login.php" class="form" method="post" name="Login" onsubmit="return valida();">
                             <h1>Login</h1>
                             <!-- username -->
                             <div class="mb-3">
                                 <label for="username" class="form-label">Username</label>
-                                <input type="text" class="form-control" id="username" name="username" placeholder="Inserisci il tuo username" required>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Inserisci il tuo username" >
                             </div>
                             <!-- password -->
                             <div class="mb-3">
                                 <!-- imput password con occhio visibilità password -->
                                 <label for="password" class="form-label">Password</label>
                                 <div class="input_box">
-                                    <input type="password" class="form-control" id="password" name="password" placeholder="Inserisci la tua password" required>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Inserisci la tua password" >
                                     <span class="icon" onclick="togglePasswordVisibility('password')">
                                         <i class="fa-solid fa-eye"></i>
                                     </span>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary">Login</button>
+                            <input type="submit" class="btn btn-primary" value="Login">
                             <!-- registrazione se non registrato -->
                             <p class="mt-3">
                                 Non sei ancora registrato? <a href="signup.php">Registrati qui</a>
@@ -60,9 +59,23 @@
                         </form>
 
                     </div>
-                    <div class="col-3"></div>
+                    <div class="col-sm-2 col-md-3"></div>
                 </div>
             </div>
+
+            <script>
+                function valida() {
+                    let username = document.Login.username.value;
+                    let password = document.Login.password.value;
+
+                    if ((username == "" || username == "undefined") || (password == "" || password == "undefined")) {
+                        alert("Completa tutti i campi per effettuare il login");
+                        return false;
+                    }
+
+                    return true;
+                }            
+        </script>
             
         </main>
 

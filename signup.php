@@ -1,4 +1,3 @@
-<html/progetto_TWEB/index.html>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -31,63 +30,82 @@
         <main>
             <div class="fluid-container main-section section">
                 <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-6 text-center">
+                    <div class="col-sm-2 col-md-3"></div>
+                    <div class="col-sm-8 col-md-6">
                         
-                        <form action="signup.php" class="form" method="post">
+                        <form action="signup.php" class="form" method="POST" name="Signup" onsubmit="return valida();">
                             <h1>Registrazione</h1>
                             <!-- nome -->
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Inserisci il tuo nome" required>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Inserisci il tuo nome" >
                             </div>
                             <!-- cognome -->
                             <div class="mb-3">
                                 <label for="surname" class="form-label">Cognome</label>
-                                <input type="text" class="form-control" id="surname" name="surname" placeholder="Inserisci il tuo cognome" required>
+                                <input type="text" class="form-control" id="surname" name="surname" placeholder="Inserisci il tuo cognome" >
                             </div>
                             <!-- data di nascità -->
                             <div class="mb-3">
                                 <label for="birth_date" class="form-label">Data di Nascita</label>
-                                <input type="date" class="form-control" id="birth_date" name="birth_date" required>
+                                <input type="date" class="form-control" id="birth_date" name="birth_date" >
                             </div>
                             <!-- email -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Inserisci la tua email" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Inserisci la tua email" >
                             </div>
                             <!-- username -->
                             <div class="mb-3">
                                 <label for="username" class="form-label">Username</label>
-                                <input type="text" class="form-control" id="username" name="username" placeholder="Inserisci il tuo username" required>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Inserisci il tuo username" >
                             </div>
                             <!-- password -->
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
                                 <div class="input_box">
-                                    <input type="password" class="form-control" id="password" name="password" placeholder="Inserisci la tua password" required>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Inserisci la tua password" >
                                     <span class="icon" onclick="togglePasswordVisibility('password')">
                                         <i class="fa-solid fa-eye"></i>
                                     </span>
-                                </div>                            </div>
+                                </div>                            
+                            </div>
                             <!-- conferma password -->
                             <div class="mb-3">
                                 <label for="confirm_password" class="form-label">Conferma Password</label>
                                 <div class="input_box">
-                                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Conferma la tua password" required>
+                                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Conferma la tua password" >
                                     <span class="icon" onclick="togglePasswordVisibility('confirm_password')">
                                         <i class="fa-solid fa-eye"></i>
                                     </span>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary">Registrati</button>
+                            <input type="submit" class="btn btn-primary" value="Registrati">
                         </form>
 
                     </div>
-                    <div class="col-3"></div>
+                    <div class="col-sm-2 col-md-3"></div>
                 </div>
             </div>
             
+            <script>
+                function valida() {
+                    let username = document.Signup.username.value;
+                    let password = document.Signup.password.value;
+                    let confirm_password = document.Signup.confirm_password.value;
+                    let email = document.Signup.email.value;
+                    let name = document.Signup.name.value;
+                    let surname = document.Signup.surname.value;
+                    let birth_date = document.Signup.birth_date.value;
+
+                    if ((username == "" || username == "undefined") || (password == "" || password == "undefined") || (confirm_password == "" || confirm_password == "undefined") || (email == "" || email == "undefined") || (name == "" || name == "undefined") || (surname == "" || surname == "undefined") || (birth_date == "" || birth_date == "undefined")) {
+                        alert("Completa tutti i campi per effettuare la registrazione");
+                        return false;
+                    }
+
+                    return true;
+                }            
+        </script>
         </main>
 
         <?php include "footer.php"; ?>
