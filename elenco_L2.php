@@ -1,12 +1,12 @@
 <?php
 session_start();
-if(!isset($_SESSION["ruolo"]) || $_SESSION["ruolo"] != 4) {
+if(!isset($_SESSION["ruolo"]) || $_SESSION["ruolo"] != "admin") {
     header("Location: index.php");
     exit();
 }
 include("DBAccess/dati_connessione.php");
 $conn = db_connection();
-$sql = "SELECT * FROM utenti WHERE id_tipologia=2";
+$sql = "SELECT * FROM utenti WHERE ruolo='cliente'";
 $result = $conn->query($sql);
 ?>
 <!DOCTYPE html>
@@ -46,8 +46,8 @@ $result = $conn->query($sql);
                                     while($row = $result->fetch_assoc()) {
                                         echo "<tr>";
                                         echo "<td>" . $row["id"] . "</td>";
-                                        echo "<td>" . $row["name"] . "</td>";
-                                        echo "<td>" . $row["surname"] . "</td>";
+                                        echo "<td>" . $row["nome"] . "</td>";
+                                        echo "<td>" . $row["cognome"] . "</td>";
                                         echo "<td>" . $row["email"] . "</td>";
                                         echo "<td>" . $row["username"] . "</td>";
                                         echo "<td><button class='btn btn-danger'>Elimina</button></td>";
