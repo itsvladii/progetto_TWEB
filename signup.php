@@ -33,7 +33,7 @@
                     <div class="col-sm-2 col-md-3 col-lg-4"></div>
                     <div class="col-sm-8 col-md-6 col-lg-4">
                         
-                        <form action="signup.php" class="form" method="POST" name="Signup" onsubmit="return valida();">
+                        <form action="controllo_signup.php" class="form" method="POST" name="Signup" onsubmit="return valida();">
                             <h1>Registrazione</h1>
                             <!-- nome -->
                             <div class="mb-3">
