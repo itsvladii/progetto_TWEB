@@ -6,10 +6,8 @@
                 <h1><span class="ticket">Ticket</span><span class="two">Two</span></h1>
             </div>
             <div id="auth-buttons">
-                <ul id="nav-links">
-                    <a href="index.php">EVENTI</a>
-                    <button id="log-in" onClick="location.href='login.php'">Log In</button>
-                </ul>
+                <a href="index.php" style="margin-right: 10px;">EVENTI</a>
+                <a href='login.php'>ACCOUNT</a>
             </div>
         </div>
     </nav>
