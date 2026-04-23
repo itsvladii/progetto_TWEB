@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <?php include "head.php"; ?>
-
         <script>
             // funzione per mostrare/nascondere la password al click sull'icona dell'occhio
             // passwordFieldId è l'id del campo password da mostrare/nascondere
@@ -23,17 +22,14 @@
                 }
             }
         </script>
+        <link rel="stylesheet" href="css/login.css">
     </head>
-    <body>
-        <?php include "navbar.php"; ?>
 
+    <body>
         <main>
-            <div class="fluid-container main-section section">
-                <div class="row">
-                    <div class="col-sm-2 col-md-3 col-lg-4"></div>
-                    <div class="col-sm-8 col-md-6 col-lg-4">
-                        
-                        <form action="controllo_login.php" class="form" method="post" name="Login" onsubmit="return valida();">
+            <div class="main-section section">
+                        <form action="controllo_login.php" class="form" method="post" name="Login" onsubmit="return valida();" id="login-form">
+                            <img src="img/logo/tickettwo_icon.png" alt="TicketTwo logo" class="login-logo">
                             <h1>Login</h1>
                             <!-- username -->
                             <div class="mb-3">
@@ -51,15 +47,12 @@
                                     </span>
                                 </div>
                             </div>
-                            <input type="submit" class="btn btn-primary" value="Login">
+                            <input type="submit" class="btn btn-warning" value="Login">
                             <!-- registrazione se non registrato -->
-                            <p class="mt-3">
+                            <p class="mt-3" id="register-link">
                                 Non sei ancora registrato? <a href="signup.php">Registrati qui</a>
                             </p>
                         </form>
-
-                    </div>
-                    <div class="col-sm-2 col-md-3 col-lg-4"></div>
                 </div>
             </div>
 
@@ -74,12 +67,12 @@
                     }
 
                     return true;
-                }            
+                }
         </script>
-            
+
         </main>
 
-        <?php include "footer.php"; ?>
+
         <!--import delle librerie JS bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
           </body>
