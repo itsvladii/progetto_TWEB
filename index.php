@@ -2,7 +2,7 @@
 <?php
     session_start();
 ?>
-<!<!-- prova del -->
+
 <html lang="en">
     <head>
         <?php include "head.php"; ?>
