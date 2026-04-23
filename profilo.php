@@ -1,4 +1,43 @@
 <!DOCTYPE html>
+<?php
+    session_start();
+    if(!isset($_SESSION["ruolo"]) || $_SESSION["ruolo"] != "cliente") {
+        header("Location: index.php");
+        exit();
+    }
+    include("DBAccess/dati_connessione.php");
+    $conn = db_connection();
+
+    $user = array(
+        "name" => "",
+        "surname" => "",
+        "email" => "",
+        "username" => "",
+        "password" => "",
+        "birth_date" => ""
+    );
+
+    $username = $_SESSION["username"];
+    $sql = "SELECT * FROM `utenti` WHERE `username`=?";
+    $stm = $conn->prepare($sql);
+    $stm->bind_param("s",$username);
+    if ($stm->execute() === TRUE) {
+        $res = $stm->get_result();
+        if($res->num_rows > 0){
+            while($obj = $res->fetch_object()){
+                $user = array(
+                    "name" => $obj->nome,
+                    "surname" => $obj->cognome,
+                    "email" => $obj->email,
+                    "username" => $obj->username,
+                    "password" => $obj->password,
+                    "birth_date" => $obj->dataDiNascita
+                );
+            }
+        }
+    }
+?>
+
 <html lang="en">
     <head>
         <?php include "head.php"; ?>

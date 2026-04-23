@@ -49,7 +49,7 @@
             }
             else {
                 // se le credenziali sono errate, si mostra un messaggio di errore
-                echo "Username o password errati";
+                echo "<script>alert('Username o password errati');</script>";
                 exit();
             }
         }
@@ -60,6 +60,10 @@
         
         $conn->close();
         $stm->close();
+    }
+    else {
+        echo "<script>alert('Username e password sono richiesti');</script>";
+        exit();
     }
 
 ?>    
