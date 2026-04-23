@@ -7,7 +7,12 @@
             </div>
             <div id="auth-buttons">
                 <a href="index.php" style="margin-right: 10px;">EVENTI</a>
-                <a href='login.php'>ACCOUNT</a>
+                <a href='controllo_sessione.php' style="margin-right: 10px;">ACCOUNT</a>
+                <?php
+                    if(isset($_SESSION["ruolo"])) {
+                        echo "<a href='logout.php'>LOGOUT</a>";
+                    }  
+                ?>
             </div>
         </div>
     </nav>

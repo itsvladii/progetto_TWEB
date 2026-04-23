@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+    session_start();
+?>
+
 <html lang="en">
     <head>
         <?php include "head.php"; ?>
