@@ -20,24 +20,21 @@
         $stm = $conn->prepare($sql);
 		$stm->bind_param("ss",$username,$password);
 		if ($stm->execute() === TRUE) {
-            echo "1";
             $res = $stm->get_result();
 			if($res->num_rows > 0){
-                echo "2";
 				while($obj = $res->fetch_object()){
 					$_SESSION["ruolo"]=$obj->ruolo;
 					$_SESSION["username"]=$username;
                     
-                    echo "3";
                     if ($stm->execute() === TRUE) { 
                         if($_SESSION["ruolo"] == "cliente") {
-                        echo "4";
+                        
                         header("Location:profilo.php");
                     } else if($_SESSION["ruolo"] == "organizzatore") {
-                        echo "5";
+                        
                         header("Location:eventi_gestiti.php");
                     } else if($_SESSION["ruolo"] == "admin") {
-                        echo "6";
+                        
                         header("Location:elenco_L2.php");
                     }
                     }

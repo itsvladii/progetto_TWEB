@@ -32,7 +32,6 @@ $result = $conn->query($sql);
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>ID</th>
                                     <th>Nome</th>
                                     <th>Cognome</th>
                                     <th>Email</th>
@@ -45,7 +44,6 @@ $result = $conn->query($sql);
                                 if ($result->num_rows > 0) {
                                     while($row = $result->fetch_assoc()) {
                                         echo "<tr>";
-                                        echo "<td>" . $row["id"] . "</td>";
                                         echo "<td>" . $row["nome"] . "</td>";
                                         echo "<td>" . $row["cognome"] . "</td>";
                                         echo "<td>" . $row["email"] . "</td>";
