@@ -30,8 +30,8 @@
         <main>
             <div class="fluid-container main-section section">
                 <div class="row">
-                    <div class="col-sm-2 col-md-3"></div>
-                    <div class="col-sm-8 col-md-6">
+                    <div class="col-sm-2 col-md-3 col-lg-4"></div>
+                    <div class="col-sm-8 col-md-6 col-lg-4">
                         
                         <form action="controllo_login.php" class="form" method="post" name="Login" onsubmit="return valida();">
                             <h1>Login</h1>
@@ -59,7 +59,7 @@
                         </form>
 
                     </div>
-                    <div class="col-sm-2 col-md-3"></div>
+                    <div class="col-sm-2 col-md-3 col-lg-4"></div>
                 </div>
             </div>
 
